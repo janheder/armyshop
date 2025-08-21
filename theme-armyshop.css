@@ -1,0 +1,36 @@
+:root{
+    --white: #FFFFFF;
+    --light: #F7F7F9;
+    --dark: #41422F;
+    --darker: #323321;
+    --red: #AE1313;
+    --lime: #9AA820;
+    --yellow: #FFB300;
+    --gray: #5B606D;
+    --green: #479429;
+
+    --font-main: "Overpass";
+    --font-headings: "Barlow Condensed";
+
+}
+
+html {
+    background-color: var(--white);
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: var(--font-main);
+    color: var(--dark);
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+    font-family: var(--font-headings);
+    text-transform: uppercase;
+}
