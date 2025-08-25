@@ -75,6 +75,7 @@ nav {
 nav>.container {
     background: transparent;
     padding: 0;
+    max-width: 1420px;
 }
 
 
@@ -141,9 +142,9 @@ section.products h2,
 .nav-linkDesktop {
     font-family: var(--font-headings);
     text-transform: uppercase;
-    font-size: 17px;
-    color: #242424;
-    background: #fff;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
 }
 
 
