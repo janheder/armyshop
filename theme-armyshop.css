@@ -2,7 +2,7 @@
   font-family: 'Overpass';
   src: url('../fonts/Overpass/Overpass-VariableFont_wght.woff2') format('woff2'),
        url('../fonts/Overpass/Overpass-VariableFont_wght.woff') format('woff');
-  font-weight: 100 900;   /* variabilní rozsah */
+  font-weight: 100 900;
   font-style: normal;
 
   ascent-override: 94%;
@@ -315,7 +315,7 @@ section.products h2,
 section.products h1,
 section.categories h1 {
     font-size: 32px;
-
+    padding-bottom: 30px;
 }
 
 section.carousel {
@@ -613,11 +613,6 @@ section.contact {
 .nav-link img,
 .nav-linkDesktop img {
     margin-top: -5px;
-}
-
-section.products h1,
-section.categories h1 {
-    padding-bottom: 30px;
 }
 
 .header-nav .cart {
@@ -951,7 +946,9 @@ section.categories {
     }
 }
 
-
+section.categories h1{
+    text-align: center;
+}
 
 .header-top__links a:hover {
     color: #fff;
