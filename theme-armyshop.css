@@ -149,9 +149,13 @@ section.products h2,
 
 
 .header-top__links a {
-    color: #5B606D;
+    color: #fff;
 }
 
+.search-form {
+    border-radius: 9999px;
+    overflow: hidden;
+}
 .search__input {
     background: #F7F7F9;
 
@@ -183,6 +187,7 @@ section.products h2,
 }
 .header-nav .cart-title{
     display: none;
+    color: white;
 }
 .header-nav .cart.--active{
         background: #9AA820;
@@ -246,7 +251,15 @@ section.products h2,
     color: #242424;
     margin: 0;
 }
-
+    .header-nav .cart__number {
+    left: 8px;
+    top: 23px;
+    background: white;
+        border: 2px solid #9AA820;
+        color: #41422F;
+      font-weight: 600;
+      padding-top: 3px;
+    }
 .header-nav .user__title {
     color: #242424;
 }
@@ -562,7 +575,7 @@ section.categories h1 {
     padding-bottom: 30px;
 }
 .header-nav .cart{
-         border: 1px solid rgba(#fff, 0.1);
+         border: 1px solid rgba(var(--white), 0.1);
          border-radius: 9999px;
         padding: 0 ;
        height: 48px;
@@ -995,13 +1008,7 @@ section.categories {
     }
 
     .header-nav .cart__number {
-    left: 8px;
-    top: 23px;
-    background: white;
-        border: 2px solid #9AA820;
-        color: #41422F;
-      font-weight: 600;
-      padding-top: 3px;
+
     }
 
     .section-about .container {
