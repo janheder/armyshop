@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'Overpass';
+  src: url('../fonts/Overpass-VariableFont_wght.woff2') format('woff2'),
+       url('../fonts/Overpass-VariableFont_wght.woff') format('woff');
+  font-weight: 100 900;   /* variabilní rozsah */
+  font-style: normal;
+
+  ascent-override: 94%;
+  descent-override: 20%;
+  line-gap-override: 0%;
+  display: swap;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap');
+
+
 :root {
     --white: #FFFFFF;
     --light: #F7F7F9;
@@ -13,8 +30,8 @@
     --white-rgb: 255, 255, 255;
     --black-rgb: 255, 255, 255;
 
-    --font-main: "Overpass";
-    --font-headings: "Barlow Condensed";
+    --font-main: "Overpass", sans-serif;
+    --font-headings: "Barlow Condensed", sans-serif;
 
 }
 
@@ -394,11 +411,15 @@ section.contact {
     border-radius: 9999px;
     height: 50px;
     padding: 10px 25px;
+    gap: 10px;
+    font-family: var(--font-headings);
+    font-size: 19px;
 }
 
 .contact__item img {
     filter: brightness(5);
     max-width: 18px;
+    margin: 0;
 }
 
 .product-card__description {
@@ -623,7 +644,7 @@ section.categories h1 {
 }
 
 .section-news {
-    background: #F7F7F9;
+    background: #fff;
     padding: 80px 0 70px 0;
 }
 
