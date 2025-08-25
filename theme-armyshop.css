@@ -1,4 +1,4 @@
-:root{
+:root {
     --white: #FFFFFF;
     --light: #F7F7F9;
     --dark: #41422F;
@@ -9,6 +9,9 @@
     --gray: #5B606D;
     --green: #479429;
     --border: #E5E5E5;
+
+    --white-rgb: 255, 255, 255;
+    --black-rgb: 255, 255, 255;
 
     --font-main: "Overpass";
     --font-headings: "Barlow Condensed";
@@ -56,7 +59,7 @@ h1 {
     margin: 0 auto;
 }
 
-.btn{
+.btn {
     font-family: var(--font-headings);
     text-transform: uppercase;
     font-size: 18px;
@@ -68,10 +71,12 @@ h1 {
 header {
     background-color: var(--dark);
 }
+
 nav {
     background-color: var(--darker);
     position: relative;
 }
+
 nav>.container {
     background: transparent;
     padding: 0;
@@ -80,7 +85,7 @@ nav>.container {
 
 
 
-.header-top{
+.header-top {
     background: transparent;
 }
 
@@ -88,6 +93,7 @@ nav>.container {
     .header-main {
         box-shadow: none;
     }
+
     body.--search-active .search-wrapper {
         border: 0px;
     }
@@ -157,6 +163,7 @@ section.products h2,
     border-radius: 9999px;
     overflow: hidden;
 }
+
 .search__input {
     background: #F7F7F9;
 
@@ -165,40 +172,44 @@ section.products h2,
 .search__button {
     background: #F7F7F9;
 }
-.header-nav{
+
+.header-nav {
     gap: 20px;
 }
-.header-nav .user{
-     margin: 0;
-         border: 1px solid rgba(255,255,255, 0.1);
-             width: 48px;
-             border-radius: 50%;
- } 
 
-.header-nav .user__icon{
-       background: transparent;
+.header-nav .user {
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 48px;
+    border-radius: 50%;
+}
+
+.header-nav .user__icon {
+    background: transparent;
     border: 0;
     height: 48px;
     width: 48px;
     margin: 0;
 }
+
 .header-nav .user__icon img,
 .header-nav .cart__icon img {
     filter: brightness(5);
 }
-.header-nav .cart-title{
+
+.header-nav .cart-title {
     display: none;
     color: white;
 }
-.header-nav .cart.--active{
-        background: #9AA820;
+
+.header-nav .cart.--active {
+    background: #9AA820;
     width: auto;
-      padding: 0 20px;
-       gap: 20px;
+    padding: 0 20px;
+    gap: 15px;
 }
-.header-nav .cart.--active .cart-title {
-  
-}
+
+.header-nav .cart.--active .cart-title {}
 
 .header-nav .user__title {
     display: none;
@@ -249,15 +260,16 @@ section.products h2,
 }
 
 
-    .header-nav .cart__number {
+.header-nav .cart__number {
     left: 8px;
     top: 23px;
     background: white;
-        border: 2px solid #9AA820;
-        color: #41422F;
-      font-weight: 600;
-      padding-top: 3px;
-    }
+    border: 2px solid #9AA820;
+    color: #41422F;
+    font-weight: 600;
+    padding-top: 3px;
+}
+
 .header-nav .user__title {
     color: #242424;
 }
@@ -312,6 +324,7 @@ footer {
     padding: 60px 0 0 0;
     content-visibility: auto;
 }
+
 .copyright {
     margin-top: 60px;
     padding: 20px 0;
@@ -346,8 +359,8 @@ section.contact {
     padding: 50px 0;
     background-color: var(--dark);
 }
-.contact__content
- {
+
+.contact__content {
     background-color: transparent;
     display: flex;
     padding: 0;
@@ -355,20 +368,24 @@ section.contact {
     justify-content: space-between;
     height: 100%;
 }
-.contact__img{
+
+.contact__img {
     display: none;
 }
-.contact__title{
+
+.contact__title {
     max-width: 520px;
     color: white;
     font-size: 32px;
 }
-.contact__wrap{
+
+.contact__wrap {
     flex-direction: row;
     padding: 0;
     gap: 20px;
 }
-.contact__item{
+
+.contact__item {
     color: #fff;
     padding: 0;
     background-color: var(--lime);
@@ -376,15 +393,18 @@ section.contact {
     height: 50px;
     padding: 10px 25px;
 }
+
 .contact__item img {
     filter: brightness(5);
 }
-.product-card__description{
+
+.product-card__description {
     display: flex;
     height: 54px;
     font-size: 13px;
     line-height: 1.4;
 }
+
 @media screen and (min-width: 992px) {
 
     .product-card:hover,
@@ -439,15 +459,16 @@ section.contact {
     justify-content: space-between;
     gap: 10px;
     align-items: center;
-            padding-bottom: 20px;
-     border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E5E5E5;
 }
+
 .product-card .product-card__link .product-card__btn {
-        display: flex;
-        margin-top: 20px;
-        height: 42px;
-        border-radius: 9999px;
-        background: var(--dark);
+    display: flex;
+    margin-top: 20px;
+    height: 42px;
+    border-radius: 9999px;
+    background: var(--dark);
 }
 
 
@@ -550,25 +571,16 @@ section.contact {
 }
 
 .footer__title {
-  font-family: var(--font-headings);
+    font-family: var(--font-headings);
     font-size: 22px;
     text-transform: uppercase;
     flex-direction: column;
     position: relative;
     margin-bottom: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     font-weight: 600;
 }
 
-.footer__title::after {
-    content: "";
-    height: 3px;
-    width: 20px;
-    background: #479429;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 
 .product-card__priceMain {
     color: #CF4823;
@@ -583,15 +595,17 @@ section.products h1,
 section.categories h1 {
     padding-bottom: 30px;
 }
-.header-nav .cart{
-         border: 1px solid rgba(var(--white), 0.1);
-         border-radius: 9999px;
-        padding: 0 ;
-       height: 48px;
-        width: 48px;
-        margin: 0;
-         color: #fff;
+
+.header-nav .cart {
+    border: 1px solid rgba(var(--white-rgb), 0.1);
+    border-radius: 9999px;
+    padding: 0;
+    height: 48px;
+    width: 48px;
+    margin: 0;
+    color: #fff;
 }
+
 .header-nav .cart__icon {
     background: transparent;
     border: 0;
@@ -1014,9 +1028,7 @@ section.categories {
         color: #242424;
     }
 
-    .header-nav .cart__number {
-
-    }
+    .header-nav .cart__number {}
 
     .section-about .container {
         flex-direction: column;
@@ -1661,12 +1673,11 @@ article .article-thumb img {
 .page-content .vote-rating .stars {
     position: relative;
 }
-.header-nav{
-     gap: 20px;
+
+.header-nav {
+    gap: 20px;
 }
-.header-nav .cart__number {
-    background: #479429;
-}
+
 
 .cart-table-shipping {
     gap: 1px;
@@ -1937,6 +1948,7 @@ body.--activeProductCarousel #productGalleryBackdrop {
     font-weight: 400;
     line-height: 1.2;
 }
+
 .copyright__author img {
     margin: 0px;
 }
