@@ -315,6 +315,7 @@ footer {
     content-visibility: auto;
 }
 .copyright {
+    margin-top: 60px;
     padding: 20px 0;
     border-top: 1px solid #E5E5E5;
 }
@@ -366,10 +367,13 @@ section.contact {
 .contact__wrap{
     flex-direction: row;
     padding: 0;
+    gap: 20px;
 }
 .contact__item{
     color: #fff;
     padding: 0;
+    background-color: var(--lime);
+    border-radius: 9999px;
 }
 .product-card__description{
     display: flex;
@@ -805,9 +809,6 @@ a {
 
 }
 
-.contact__title {
-    max-width: 420px;
-}
 
 .cart-table-personal .cart-table__title {
     margin-top: 60px;
